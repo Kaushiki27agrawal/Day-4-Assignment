@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Comment Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .comments {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .comment {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            background-color: #fdfdfd;
+        }
+
+        .comments .comment p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .reply {
+            background-color: #ADD8E6; 
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            border: 1px solid #c0e0f0;
+        }
+
+        .reply p {
+            font-weight: bold;
+            margin-left: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .comment:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="comments">
+        <div class="comment">
+            <p>First comment: This is a great discussion!</p>
+            <div class="reply">
+                <p>Reply to first comment: I totally agree!</p>
+            </div>
+        </div>
+        <div class="comment">
+            <p>Second comment: Looking forward to more insights.</p>
+        </div>
+        <div class="comment">
+            <p>Third comment: Excellent points raised by everyone.</p>
+            <div class="reply">
+                <p>Reply to third comment: Thanks for your feedback!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
